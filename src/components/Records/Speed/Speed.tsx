@@ -5,11 +5,11 @@ import valueFormatter from "@functions/valueFormatter";
 
 const Speed = () => {
   const { showSpeed, useImperial } = flagStore.get();
-  const { speed } = globalStore.get();
-  const { metric, imperial } = valueFormatter('speed', speed)
+  const { recordSpeed } = globalStore.get();
+  const { metric, imperial } = valueFormatter('speed', recordSpeed)
   return (
     <div className="speed-text" style={{ display: showSpeed ? '' : 'none' }}>
-      Velocidad: {useImperial ? imperial : metric}
+      Record Velocidad: {useImperial ? imperial : metric}
     </div>
   )
 }

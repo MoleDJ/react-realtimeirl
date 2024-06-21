@@ -7,7 +7,7 @@ const LatestTip = () => {
     <div className="latest-tip">
       {value && (
         <>
-          <div className="se-heading">Latest Tip:</div>
+          <div className="se-heading">Ultima donación:</div>
           <div className="latest-tip-data">
             {value.name && `${value.name} - $${value.amount.toFixed(2)} `}
           </div>

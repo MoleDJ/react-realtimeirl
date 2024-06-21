@@ -56,9 +56,9 @@ const Weather = () => {
           </div>
         </div>
         <div className="current-weather">
-          Current: {useImperial ? temp.imperial : temp.metric}
+          Actual: {useImperial ? temp.imperial : temp.metric}
           <br />
-          Feels like: {useImperial ? feels_like.imperial : feels_like.metric}
+          Sensación: {useImperial ? feels_like.imperial : feels_like.metric}
         </div>
       </div>
     </Suspense>

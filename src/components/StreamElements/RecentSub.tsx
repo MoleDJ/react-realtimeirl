@@ -19,7 +19,7 @@ const RecentSub = () => {
 
   return (
     <div className="recent-sub">
-      <div className="se-heading">Recent Subs:</div>
+      <div className="se-heading">Subs Recientes:</div>
       <div className="recent-sub-data">
         {value.map((sub, index) => {
           if (index < 5) {

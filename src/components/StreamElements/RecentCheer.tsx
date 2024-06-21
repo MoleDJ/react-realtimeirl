@@ -12,7 +12,7 @@ const RecentCheer = () => {
     <div className="recent-cheer">
       {value && (
         <>
-          <div className="se-heading">Recent Cheers:</div>
+          <div className="se-heading">Bits recientes:</div>
           <div className="recent-cheer-data">
             {value.map(
               (cheer: ICheerProps, index: number) => {

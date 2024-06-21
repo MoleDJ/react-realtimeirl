@@ -5,7 +5,7 @@ const Heartrate = () => {
   const { showHeartrate } = flagStore.get();
   const { heartrate } = globalStore.get();
   return (
-    <div className="heart-text" style={{ display: showHeartrate ? '' : 'none' }}>{heartrate === 0 ? `Heartrate: ${heartrate} bpm` : ''}</div>
+    <div className="heart-text" style={{ display: showHeartrate ? '' : 'none' }}>{heartrate === 0 ? `Pulsaciones: ${heartrate} bpm` : ''}</div>
   )
 }
 

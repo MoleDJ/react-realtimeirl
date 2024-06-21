@@ -7,7 +7,7 @@ const LatestCheer = () => {
     <div className="latest-cheer">
       {value && (
         <>
-          <div className="se-heading">Latest Cheer:</div>
+          <div className="se-heading">Ultimos bits:</div>
           <div className="latest-cheer-data">
             {value.name && `${value.name} - ${value.amount} bits`}
           </div>

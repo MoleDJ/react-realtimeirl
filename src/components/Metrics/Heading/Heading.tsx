@@ -9,7 +9,7 @@ const Heading = () => {
   const cardinal = compass[(((heading + 22.5) % 360) / 45) | 0];
 
   return (
-    <div className="heading-text" style={{ display: showHeading ? '' : 'none' }}>Heading:&nbsp;
+    <div className="heading-text" style={{ display: showHeading ? '' : 'none' }}>Dirección:&nbsp;
       <span className="heading-cardinal">{cardinal}&nbsp;</span>
       <span className="heading-degrees">{heading}&deg;</span>
     </div>

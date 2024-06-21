@@ -4,7 +4,7 @@ const LatestFollow = () => {
   const value = globalStore.streamElements['follower-latest'].get();
   return (
     <div className="latest-follow">
-      <div className="se-heading">Latest Follow:</div>
+      <div className="se-heading">Ultimo seguidor:</div>
       {value && (
         <div className="latest-follow-data">
           {value.name && `${value.name}`}

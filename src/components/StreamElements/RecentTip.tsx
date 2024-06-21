@@ -11,7 +11,7 @@ const RecentTip = () => {
     <div className="recent-tip">
       {value && (
         <>
-          <div className="se-heading">Recent Tips:</div>
+          <div className="se-heading">Donaciones Recientes:</div>
           <div className="recent-tip-data">
             {value.map(
               (tip: ITipProps, index: number) => {

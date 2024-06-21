@@ -5,13 +5,13 @@ import globalStore from "@store/globalStore"
 
 const Altitude = () => {
   const { showAltitude, useImperial } = flagStore.get();
-  const { altitude } = globalStore.get();
+  const { recordAltitude } = globalStore.get();
 
-  const { metric, imperial } = valueFormatter('altitude', altitude['EGM96'])
+  const { metric, imperial } = valueFormatter('altitude', recordAltitude)
 
   return (
     <div className="altitude-text" style={{ display: showAltitude ? '' : 'none' }}>
-      Altitud: {useImperial ? imperial : metric}
+      Record Altitud: {useImperial ? imperial : metric}
     </div>
   )
 }

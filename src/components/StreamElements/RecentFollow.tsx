@@ -9,7 +9,7 @@ const RecentFollow = () => {
 
   return (
     <div className="recent-follow">
-      <div className="se-heading">Recent Followers:</div>
+      <div className="se-heading">Seguidores recientes:</div>
       <div className="recent-follow-data">
         {value.map(
           (follow: IFollowProps, index: number) => {

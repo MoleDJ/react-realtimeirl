@@ -12,7 +12,7 @@ const LatestSub = () => {
   const value = globalStore.streamElements['subscriber-latest'].get();
   return (
     <div className="latest-sub">
-      <div className="se-heading">Latest Sub:</div>
+      <div className="se-heading">Ultima Sub:</div>
       {value && (
         <div className="latest-sub-data">
           {value.name && `${value.name} - ${value.amount} ${value.amount > 1 ? 'months' : 'month'} - (${tier[value['tier']]})`}

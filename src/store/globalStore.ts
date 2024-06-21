@@ -6,6 +6,7 @@ const globalStore = observable({
     EGM96: 0,
     WGS84: 0
   },
+  relativeAltitude: 0,
   date: '',
   dateTime: '',
   distance: 0,
@@ -20,6 +21,7 @@ const globalStore = observable({
     longitude: 0,
   },
   sessionId: '',
+  sessionAltitude: null,
   speed: 0,
   streamElements: {
     'cheer-latest': { name: '', amount: 0 },
@@ -35,6 +37,10 @@ const globalStore = observable({
   time: '',
   totalDistance: 0,
   zoneId: 'Europe/London',
+  recordDistance: 0,
+  recordSpeed: 0,
+  recordAltitude: 0,
+  recordRelativeAltitude: 0,
 });
 
 export default globalStore;

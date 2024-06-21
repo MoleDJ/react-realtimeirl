@@ -5,13 +5,13 @@ import globalStore from "@store/globalStore"
 
 const Distance = () => {
   const { showDistance, useImperial } = flagStore.get();
-  const { totalDistance } = globalStore.get();
+  const { recordDistance } = globalStore.get();
 
-  const { metric, imperial } = valueFormatter('distance', totalDistance)
+  const { metric, imperial } = valueFormatter('distance', recordDistance)
 
   return (
     <div className="distance-text" style={{ display: showDistance ? '' : 'none' }}>
-      Distancia: {useImperial ? imperial : metric}
+      Record Distancia: {useImperial ? imperial : metric}
     </div>
   )
 }

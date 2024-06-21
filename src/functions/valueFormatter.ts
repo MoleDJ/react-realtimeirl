@@ -5,6 +5,13 @@ const valueFormatter = (type: string, inputValue: number) => {
       metric: `${(inputValue).toFixed(0)} m`,
       imperial: `${(inputValue * 3.28084).toFixed(0)} ft`
     }
+  }  
+  // altitude from meters to feet
+  if (type === 'relativeAltitude') {
+    return {
+      metric: `${(inputValue).toFixed(0)} m`,
+      imperial: `${(inputValue * 3.28084).toFixed(0)} ft`
+    }
   }
   // distance from km to miles
   if (type === 'distance') {

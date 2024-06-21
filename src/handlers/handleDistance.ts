@@ -33,7 +33,11 @@ const handleDistance = () => {
       globalStore.totalDistance.set(0)
     }
   })
-
+  globalStore.totalDistance.onChange((distance) => {
+    if(globalStore.recordDistance.get() < distance.value){
+      globalStore.recordDistance.set(distance.value);
+    }
+  })
   // Observe location changes and calculate distance
   globalStore.location.onChange((location) => {
     // Ignore location and return if the previous lat/lon was 0 - this indicates cold start - GPS often jumps from 0 to new location.
@@ -45,6 +49,8 @@ const handleDistance = () => {
       location.value.latitude,
       location.value.longitude
     ))
+
+   
   })
 };
 
